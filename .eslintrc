@@ -1,0 +1,43 @@
+{
+  "extends" : [
+    "standard",
+    "plugin:promise/recommended"
+  ],
+  "plugins": [
+    "promise"
+  ],
+  "env": {
+    "browser" : true,
+    "node"    : true,
+    "mocha"   : true,
+    "jest"    : true
+  },
+  "globals" : {
+    "artifacts": false,
+    "contract": false,
+    "assert": false,
+    "web3": false
+  },
+  "rules": {
+
+    // Strict mode
+    "strict": [2, "global"],
+
+    // Code style
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", "always"],
+    "dot-notation": ["error", {"allowKeywords": true, "allowPattern": ""}],
+    "no-redeclare": ["error", {"builtinGlobals": true}],
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "camelcase": ["error", {"properties": "always"}],
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "object-curly-spacing": ["error", "never"],
+    "max-len": [2, 120, 2],
+    "generator-star-spacing": ["error", "before"],
+    "promise/avoid-new": 0,
+    "promise/always-return": 0
+  }
+}
