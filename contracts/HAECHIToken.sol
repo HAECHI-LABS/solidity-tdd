@@ -3,6 +3,7 @@ pragma solidity ^0.4.21;
 import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 import "./Transferable.sol";
 
+
 /**
  * @title HAECHIToken
  * @dev This HAECHIToken is a just test code. Don't USE this code for production!
